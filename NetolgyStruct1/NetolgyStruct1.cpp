@@ -13,7 +13,6 @@ enum mounths
     October, //Октябрь
     November, //Ноябрь
     December, //Декабрь
-    Exit = 0
 };
 
 int main()
@@ -67,8 +66,8 @@ int main()
             case mounths::December:
                 std::cout << "Декабрь";
                 break;
-            case mounths::Exit:
-                return false;
+            case 0:
+                return 0;
             default:
                 std::cout << "Ошибка такого месяца не существует!!!";
                 std::cout << std::endl;
